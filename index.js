@@ -39,3 +39,10 @@ function isCreditCardValid(digitArr) {
 
 console.log(isCreditCardValid([5, 2, 2, 8, 2])); // true
 console.log(isCreditCardValid([5, 2, 2, 8, 3])); // false
+
+//We set variable sum to 0, and lastDigit to the last digit in the array.
+//We loop through the array backwards, starting at the second to last digit, and incrementing by 2.
+//We multiply each digit by 2, and if it is greater than 9, we subtract 9 from it.
+//We loop through the array again, and add each digit to sum.
+//We add lastDigit to sum.
+//If sum is divisible by 10, we return true, otherwise we return false.
